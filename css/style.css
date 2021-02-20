@@ -1,0 +1,80 @@
+/* General */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+html, body{
+    width:100%;
+    height: 100%;
+    min-height: 100%;
+}
+.container{
+    width:80%;
+    height: 100%;
+    min-height: 100%;
+    margin:auto;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+/* heart */
+.title{
+    width: 100%;
+    text-align: center;
+    color: #aa1111;
+    font-weight: 700;
+    font-family: cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.heart{
+    width: 100%;
+    text-align: center;
+    padding-top:10%;
+}
+.heart-icon{
+    font-size: 200px;
+    color: #aa1111;
+    animation-name: heart;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.heart-icon:hover{
+    animation-play-state: paused;
+}
+@keyframes heart{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.25,1.25);
+    }
+    /* from{
+    transform: scale(1,1);
+    }
+    to{
+    transform: scale(1.25,1.25);
+    } */
+}   
+/* copy right */
+.copyright{
+    width: 80%;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    background-color: #bdbdbd;
+    color: #333030;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    text-align: center;
+}
